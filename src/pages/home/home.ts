@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { ContactPage } from '../contact/contact';
 import { LifecycleEventsPage } from '../lifecycle-events/lifecycle-events';
+import { AboutPage } from '../about/about';
 
 @Component({
   selector: 'page-home',
@@ -34,6 +35,10 @@ export class HomePage {
       }).catch(error => {
         console.log('Mensagem se houver erro.', error);        
       });
+  }
+
+  onPushAbout(): void {
+    this.navCtrl.push(AboutPage)
   }
 
 
