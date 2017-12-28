@@ -7,22 +7,25 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ContactPage } from './../pages/contact/contact';
+import { LifecycleEventsPage } from './../pages/lifecycle-events/lifecycle-events';
 
 @NgModule({
   declarations: [
     ContactPage,
     MyApp,
-    HomePage
+    HomePage,
+    LifecycleEventsPage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp)
-  ],
+  ],  
   bootstrap: [IonicApp],
   entryComponents: [
     ContactPage,
     MyApp,
-    HomePage
+    HomePage,
+    LifecycleEventsPage
   ],
   providers: [
     StatusBar,

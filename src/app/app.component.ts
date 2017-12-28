@@ -13,19 +13,17 @@ export class MyApp {
   //@ViewChild(Nav) nav: Nav;
 
   // forma 2: Decora "ViewChield e usa a variavel local 'myNav' definida no elemento HTML app.html
-  @ViewChild('myNav') nav: Nav;
+  //@ViewChild('myNav') nav: Nav;
 
   rootPage:any = HomePage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
-      // Okay, so the platform is ready and our plugins are available.
-      // Here you can do any higher level native things you might need.
       statusBar.styleDefault();
       splashScreen.hide();
 
       // no fim do carregamento da pagina chama a navegação para a proxima pagina escolhida por push
-      this.nav.push(ContactPage)
+     // this.nav.push(ContactPage)
     });
   }
 }
